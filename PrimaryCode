@@ -1,8 +1,6 @@
 print("Welcome to David's Personality Quiz!")
 start_q = int(input("Press 1 to play"))
 
-score = 0
-
 if start_q == 1:
     print("I will ask 5 questions.")
     print("These questions will help guide you in knowing David.")
@@ -10,8 +8,17 @@ if start_q == 1:
 
     oneq = input("Does David want to live in Seattle or Boston?")
     if oneq == "Seattle":
-        score == 1;
-        print (score)
+        print ("Score: 1")
         secq = input("David's favorite comedian is George Carlin (Yes/No)")
         if secq == "Yes":
-          score = 2
+          print ("Score: 2")
+          thiq = input("David's favorite soccer team is Arsenal (T/F)")
+          if thiq == "F":
+            print("Score: 3")
+            foq = input("David thinks (Messi/Ronaldo) is the GOAT")
+            if foq == "Messi":
+              print ("Score: 4")
+              last = input("David is good at coding (T/F)")
+              if last == "T":
+                print ("Score: 5")
+                print ("Congrats you are a rookie at David-Ology")

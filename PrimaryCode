@@ -1,0 +1,17 @@
+print("Welcome to David's Personality Quiz!")
+start_q = int(input("Press 1 to play"))
+
+score = 0
+
+if start_q == 1:
+    print("I will ask 5 questions.")
+    print("These questions will help guide you in knowing David.")
+    print("A score of 5 is the highest possible, get one wrong and you have to restart.")
+
+    oneq = input("Does David want to live in Seattle or Boston?")
+    if oneq == "Seattle":
+        score == 1;
+        print (score)
+        secq = input("David's favorite comedian is George Carlin (Yes/No)")
+        if secq == "Yes":
+          score = 2
